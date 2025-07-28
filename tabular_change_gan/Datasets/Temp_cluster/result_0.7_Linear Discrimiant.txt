@@ -1,0 +1,123 @@
+Results for Linear Discrimiant classifier
+==================================================
+
+		------------------------------
+
+Iteration 1 of 15:
+Total synthetic data points: 29279
+Count of shortage areas: 319
+Ratio of shortage areas: 0.638
+Min shortage: 0.0
+Max shortage: 165.0
+Mean shortage: 28.38
+		------------------------------
+
+Iteration 1:
+b value: 0.7
+Oracle loss: 0.1087
+Small loss: 0.2740
+Delta_1: 0.0100
+Delta_2: 0.0005
+Beta: 0.2077
+a_hat: 1.0000
+C_h: 1.0000
+F(G,h): 0.1643
+Epsilon: 0.0935
+Uncertainty_1: 0.1128
+Uncertainty_2: 0.0001
+Lower Bound: inf
+Loss without optimization: 0.0821 ± 0.0013
+Loss using Boostrap: 0.228
+Loss using Theory: 0.0797
+------------------------------
+
+		------------------------------
+
+Iteration 2 of 15:
+Total synthetic data points: 34921
+Count of shortage areas: 214
+Ratio of shortage areas: 0.428
+Min shortage: 0.0
+Max shortage: 158.0
+Mean shortage: 17.096
+		------------------------------
+
+Iteration 2:
+b value: 0.7
+Oracle loss: 0.1087
+Small loss: 0.2740
+Delta_1: 0.0100
+Delta_2: 0.0005
+Beta: 0.2029
+a_hat: 1.0000
+C_h: 1.0000
+F(G,h): 0.1642
+Epsilon: 0.0934
+Uncertainty_1: 0.1129
+Uncertainty_2: 0.0001
+Lower Bound: inf
+Loss without optimization: 0.0819 ± 0.0010
+Loss using Boostrap: 0.228
+Loss using Theory: 0.0796
+------------------------------
+
+		------------------------------
+
+Iteration 3 of 15:
+Total synthetic data points: 37125
+Count of shortage areas: 167
+Ratio of shortage areas: 0.334
+Min shortage: 0.0
+Max shortage: 156.0
+Mean shortage: 12.688
+		------------------------------
+
+Iteration 3:
+b value: 0.7
+Oracle loss: 0.1087
+Small loss: 0.2740
+Delta_1: 0.0100
+Delta_2: 0.0005
+Beta: 0.2389
+a_hat: 1.0000
+C_h: 1.0000
+F(G,h): 0.1860
+Epsilon: 0.0863
+Uncertainty_1: 0.1101
+Uncertainty_2: 0.0001
+Lower Bound: inf
+Loss without optimization: 0.0816 ± 0.0012
+Loss using Boostrap: 0.23
+Loss using Theory: 0.0825
+------------------------------
+
+		------------------------------
+
+Iteration 4 of 15:
+Total synthetic data points: 38223
+Count of shortage areas: 136
+Ratio of shortage areas: 0.272
+Min shortage: 0.0
+Max shortage: 150.0
+Mean shortage: 10.492
+		------------------------------
+
+Iteration 4:
+b value: 0.7
+Oracle loss: 0.1087
+Small loss: 0.2740
+Delta_1: 0.0100
+Delta_2: 0.0005
+Beta: 0.2619
+a_hat: 1.0000
+C_h: 1.0000
+F(G,h): 0.1994
+Epsilon: 0.0795
+Uncertainty_1: 0.1086
+Uncertainty_2: 0.0001
+Lower Bound: 0.0092
+Loss without optimization: 0.0812 ± 0.0018
+Loss using Boostrap: 0.23
+Loss using Theory: 0.0841
+------------------------------
+

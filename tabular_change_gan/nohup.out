@@ -1,0 +1,148 @@
+==================================================
+---------- Working on oracle data ----------
+---------------- Generator: tvae ----------------
+---------------- Start Run: iteration 1 ----------------
+--------------------------------
+Prepare the data
+Using device: NAME: cuda
+NUM_GPUS: 1
+Loaded dataset from Datasets/Bank_Marketing/300_200/df_train.csv
+Loaded dataset from Datasets/Bank_Marketing/300_200/df_small.csv
+Loaded dataset from Datasets/Bank_Marketing/300_200/df_oracle.csv
+Data loading time: 0.03 seconds
+Data preparation time: 0.01 seconds
+Linear Discrimiant: Accuracy = 0.8913
+ML models training time: 0.30 seconds
+GAN loading time: 0.32 seconds
+Transform time: 0.09 seconds
+Dimension of data: 46
+Computing centroids:   0%|          | 0/500 [00:00<?, ?it/s]Computing centroids:  11%|█         | 56/500 [00:00<00:00, 556.23it/s]Computing centroids:  22%|██▏       | 112/500 [00:00<00:00, 551.69it/s]Computing centroids:  34%|███▍      | 169/500 [00:00<00:00, 557.76it/s]Computing centroids:  45%|████▌     | 226/500 [00:00<00:00, 561.30it/s]Computing centroids:  57%|█████▋    | 283/500 [00:00<00:00, 559.72it/s]Computing centroids:  68%|██████▊   | 339/500 [00:00<00:00, 555.30it/s]Computing centroids:  79%|███████▉  | 395/500 [00:00<00:00, 555.24it/s]Computing centroids:  90%|█████████ | 452/500 [00:00<00:00, 559.04it/s]Computing centroids: 100%|██████████| 500/500 [00:00<00:00, 558.19it/s]
+Shape of centroids: (500, 46)
+Centroids computation time: 0.90 seconds
+Number of nearest clusters to get the limitation of distance: 50
+Computing radius:   0%|          | 0/500 [00:00<?, ?it/s]Computing radius:  11%|█         | 56/500 [00:00<00:00, 556.07it/s]Computing radius:  22%|██▏       | 112/500 [00:00<00:00, 543.24it/s]Computing radius:  34%|███▎      | 168/500 [00:00<00:00, 546.70it/s]Computing radius:  45%|████▍     | 223/500 [00:00<00:00, 547.32it/s]Computing radius:  56%|█████▌    | 279/500 [00:00<00:00, 549.91it/s]Computing radius:  67%|██████▋   | 334/500 [00:00<00:00, 541.60it/s]Computing radius:  78%|███████▊  | 389/500 [00:00<00:00, 539.14it/s]Computing radius:  89%|████████▉ | 444/500 [00:00<00:00, 541.88it/s]Computing radius: 100%|█████████▉| 499/500 [00:00<00:00, 511.11it/s]Computing radius: 100%|██████████| 500/500 [00:00<00:00, 532.30it/s]
+Radius computation time: 0.94 seconds
+Shape of eta: (500,)
+Max radius: 160.38
+Min radius: 5.39
+Mean radius: 12.46
+Median radius: 10.21
+Std radius: 10.28
+Load the polynomial distribution
+Load the optimal number of points per partion
+Adjust the optimal number of points per partion
+Adjust factor: 0.7
+--------------------------------
+  0%|          | 0/1 [00:00<?, ?it/s]### ------ Running Linear Discrimiant classifier ------ ###
+########## 0. Calculate Oracle - Small set Loss ##########
+Oracle loss: 0.1087
+Small loss: 0.2740
+Time to calculate Oracle - Small set Loss: 0.00 seconds
+########## 1. Calculate Lower bound ##########
+--------------------------------
+Iteration 1 of 15
+Generated 50000 synthetic data in 1.28 seconds
+
+Clustering synthetic data:   0%|          | 0/5 [00:00<?, ?it/s][A
+Clustering synthetic data:  20%|██        | 1/5 [00:00<00:00,  6.81it/s][A
+Clustering synthetic data:  40%|████      | 2/5 [00:00<00:00,  5.63it/s][A
+Clustering synthetic data:  60%|██████    | 3/5 [00:00<00:00,  4.29it/s][A
+Clustering synthetic data:  80%|████████  | 4/5 [00:00<00:00,  4.55it/s][A
+Clustering synthetic data: 100%|██████████| 5/5 [00:01<00:00,  4.70it/s][AClustering synthetic data: 100%|██████████| 5/5 [00:01<00:00,  4.78it/s]
+Time to store data: 0.16 seconds
+Clustering synthetic data time: 1.21 seconds
+
+Processing vectors:   0%|          | 0/49 [00:00<?, ?it/s][A
+Processing vectors:   2%|▏         | 1/49 [00:01<01:26,  1.81s/it][A
+Processing vectors:   4%|▍         | 2/49 [00:03<01:24,  1.80s/it][A
+Processing vectors:   6%|▌         | 3/49 [00:05<01:22,  1.80s/it][A
+Processing vectors:   8%|▊         | 4/49 [00:07<01:21,  1.80s/it][A
+Processing vectors:  10%|█         | 5/49 [00:09<01:19,  1.80s/it][A
+Processing vectors:  12%|█▏        | 6/49 [00:10<01:17,  1.80s/it][A
+Processing vectors:  14%|█▍        | 7/49 [00:12<01:15,  1.80s/it][A
+Processing vectors:  16%|█▋        | 8/49 [00:14<01:14,  1.81s/it][A
+Processing vectors:  18%|█▊        | 9/49 [00:16<01:12,  1.81s/it][A
+Processing vectors:  20%|██        | 10/49 [00:18<01:10,  1.81s/it][AProcessing vectors:  20%|██        | 10/49 [00:19<01:16,  1.97s/it]
+  0%|          | 0/1 [00:22<?, ?it/s]
+Traceback (most recent call last):
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/main.py", line 413, in <module>
+    run(i, gan_model, data_type, save_dir)
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/main.py", line 299, in run
+    result = run_one_epoch_lower_bound(iter, cfg.LOWER_BOUND.NUM_ITERATIONS, train_encoder, cls_models_one, model, eta, preprocessor_cluster, index, df_small, no_syn, no_syn_adj, Pg, cfg.LOWER_BOUND.DELTA_1, cfg.LOWER_BOUND.DELTA_2, result_file)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/main.py", line 42, in run_one_epoch_lower_bound
+    df_syn = get_loss_0_1_small(data_df, X_syn, y_syn, cls_models_one, preprocessor_cluster, os.path.join(cfg.LOSS.SAVE_DIR, 'syn_loss_0_1.csv'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/finetune_classifiers.py", line 70, in get_loss_0_1_small
+    batch_vectors = [transform_row(preprocessor, batch_df.iloc[[j]]) for j in range(len(batch_df))]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/clustering_data.py", line 27, in transform_row
+    return transform.transform(row)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/sklearn/compose/_column_transformer.py", line 1101, in transform
+    Xs = self._call_func_on_transformers(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/sklearn/compose/_column_transformer.py", line 910, in _call_func_on_transformers
+    return Parallel(n_jobs=self.n_jobs)(jobs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 77, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/joblib/parallel.py", line 1986, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/joblib/parallel.py", line 1914, in _get_sequential_output
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 139, in __call__
+    return self.function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/sklearn/pipeline.py", line 1531, in _transform_one
+    res = transformer.transform(X, **params.transform)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/sklearn/pipeline.py", line 1089, in transform
+    routed_params = process_routing(self, "transform", **params)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py", line 1565, in process_routing
+    class EmptyRequest:
+KeyboardInterrupt
+==================================================
+---------- Working on oracle data ----------
+---------------- Generator: tvae ----------------
+---------------- Start Run: iteration 1 ----------------
+--------------------------------
+Prepare the data
+Using device: NAME: cuda
+NUM_GPUS: 1
+Loaded dataset from Datasets/Bank_Marketing/300_200/df_train.csv
+Loaded dataset from Datasets/Bank_Marketing/300_200/df_small.csv
+Loaded dataset from Datasets/Bank_Marketing/300_200/df_oracle.csv
+Data loading time: 0.04 seconds
+Data preparation time: 0.01 seconds
+Linear Discrimiant: Accuracy = 0.8913
+ML models training time: 0.24 seconds
+Traceback (most recent call last):
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/main.py", line 413, in <module>
+    run(i, gan_model, data_type, save_dir)
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/main.py", line 251, in run
+    loaded_df_train, loaded_df_small, loaded_df_oracle, X_train, y_train, X_small_test, y_small_test, X_oracle, y_oracle, train_encoder, pre_processor, cls_models, model, preprocessor_cluster, dim, index, centroids, eta, no_syn, df_small, df_oracle, Pg, no_syn_opt, no_syn_adj = prepare_process(type_model,type_data, save_dir)
+                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/main.py", line 241, in prepare_process
+    model = prepare_gan_others(type_model=type_model,type_data=type_data, save_dir=save_dir)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/main.py", line 170, in prepare_gan_others
+    model = load_generator(model_dir, type_model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data_change_gan/finetune_others_gan.py", line 81, in load_generator
+    generator = TVAESynthesizer.load(filepath=model_dir)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/sdv/single_table/base.py", line 713, in load
+    synthesizer = cloudpickle.load(f)
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk2/home/tungnd/Model_eval/tabular_data/tabular_venv/lib/python3.12/site-packages/numpy/random/_pickle.py", line 69, in __randomstate_ctor
+    def __randomstate_ctor(bit_generator_name="MT19937",
+    
+KeyboardInterrupt
