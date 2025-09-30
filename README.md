@@ -58,11 +58,7 @@ Python3 support only. Tested on CUDA9.0, cudnn7.
 | configure                       | description                                                               |
 |---------------------------------|---------------------------------------------------------------------------|
 | DATASET_ID                      | UCI Repository dataset ID, eg: 222                                       |
-<!-- | ORACLE_RATIO                    | Ratio of oracle points, eg: 0.7                                          | -->
 | TOTAL_PARTITONS                 | Total partitions for clustering, eg: 500                                  |
-<!-- | EPOCHS                          | Training epochs, eg: 3                                                    |
-| BATCH_SIZE                      | Batch size for training, eg: 500                                          | -->
-<!-- | NUM_CENTROIDS                   | Number of cluster centroids, eg: 500                                      | -->
 | ADJUST_FACTOR                   | Adjustment factor for distribution, eg: 0.7                               |
 | DELTA_1                         | Delta 1 parameter, eg: 0.01                                               |
 | DELTA_2                         | Delta 2 parameter, eg: 0.0005                                             |
