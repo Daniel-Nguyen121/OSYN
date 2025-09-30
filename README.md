@@ -1,4 +1,4 @@
-# OSYN: Optimal Synthetic Data Generation for Machine Learning
+# OSYN: Optimized SYNthetic data for Evaluating Generalization ability
 
 ## Overview
 
