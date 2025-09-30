@@ -1,5 +1,5 @@
 # OSYN
-This repo is of ACML 2025 paper "Using Synthetic Data to estimate the True Error is theoretically and practically doable" (conditionally accepted at Journal track).
+This repo is of ACML 2025 paper "**Using Synthetic Data to estimate the True Error is theoretically and practically doable**" (conditionally accepted at Journal track).
 
 **OSYN is a theoretically grounded framework** that selects (and optimizes) synthetic test data from a generator to evaluate a trained model, yielding **reliable estimates** of its **true test error** when real test sets are scarce.
 <!-- 
@@ -25,7 +25,7 @@ OSYN/
 ├── finetune_classifiers.py   # Classifier training and evaluation
 ├── finetune_gan.py           # CTGAN training and management
 ├── clustering_data.py        # Clustering and data distribution algorithms
-├── calculate_lower_bound.py  # Lower bound calculation and uncertainty estimation
+├── calculate_lower_bound.py  # Estimating True Test Error of the model
 ├── build_models.py           # Model factory for various classifiers
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # Project documentation
@@ -54,7 +54,7 @@ Python3 support only. Tested on CUDA9.0, cudnn7.
 * scipy
 * joblib
 
-### configuration
+### Configuration
 | configure                       | description                                                               |
 |---------------------------------|---------------------------------------------------------------------------|
 | DATASET_ID                      | UCI Repository dataset ID, eg: 222                                       |
